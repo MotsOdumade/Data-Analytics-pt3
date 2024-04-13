@@ -18,8 +18,8 @@ httpServer.listen(HTTP_PORT, () => {
 });
 
 // HTTPS server
-const privateKey = fs.readFileSync('/Users/mots/Desktop/Part 3 API/private.key', 'utf8');
-const certificate = fs.readFileSync('/Users/mots/Desktop/Part 3 API/certificate.crt', 'utf8');
+const privateKey = fs.readFileSync('/private.key', 'utf8');
+const certificate = fs.readFileSync('/certificate.crt', 'utf8');
 const credentials = { key: privateKey, cert: certificate };
 
 const httpsServer = https.createServer(credentials, app);
