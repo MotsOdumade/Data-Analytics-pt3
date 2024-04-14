@@ -8,7 +8,17 @@ const app = express();
 
 // HTTP server
 const httpServer = http.createServer(app);
-const HTTP_PORT = 80;
+const HTTP_PORT = 3000;
+
+// Define your Express routes here
+app.get('/users', (req, res) => {
+    res.send("GET request on users resource");
+});
+
+
+
+
+
 
 httpServer.listen(HTTP_PORT, () => {
     console.log(`HTTP Server is running on port ${HTTP_PORT}`);
@@ -18,10 +28,7 @@ httpServer.listen(HTTP_PORT, () => {
 
 
 
-// Define your Express routes here
-app.get('/users', (req, res) => {
-    res.send("GET request on users resource");
-});
+
 
 
 
