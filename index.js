@@ -19,7 +19,7 @@ httpServer.listen(HTTP_PORT, () => {
 
 
 // Define your Express routes here
-app.get('/apiA/users', (req, res) => {
+app.get('/users', (req, res) => {
     res.send("GET request on users resource");
 });
 
