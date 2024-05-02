@@ -11,7 +11,7 @@ const httpServer = http.createServer(app);
 const HTTP_PORT = 3000;
 
 // Define your Express routes here
-app.get('/users', (req, res) => {
+app.get('/v1/users', (req, res) => {
     res.send("GET request on users resource");
 });
 
