@@ -12,7 +12,7 @@ const HTTP_PORT = 3000;
 
 // Define your Express routes here
 app.get('/v1/users', (req, res) => {
-    res.send("GET request on users resource");
+    res.send("instead, we'll use this process to share html, css and javascript files with the client");
 });
 
 
